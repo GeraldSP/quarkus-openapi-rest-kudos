@@ -2,6 +2,7 @@ greeting:
   message: "hello"
 
 quarkus:
+  profile: dev
   openshift:
     build-strategy: docker
     route:

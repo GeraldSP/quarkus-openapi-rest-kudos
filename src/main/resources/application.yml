@@ -1,2 +1,11 @@
 greeting:
   message: "hello"
+
+quarkus:
+  openshift:
+    build-strategy: docker
+    route:
+      expose: true
+    jvm-dockerfile: src/main/docker/Dockerfile.jvm
+  kubernetes-client:
+    trust-certs: true

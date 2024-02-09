@@ -1,5 +1,15 @@
 # quarkus-openapi-rest-kudos
 
+## URLS 
+
+:8080/q/openapi
+:8080/q/swagger-ui
+
+## deploy to OCP
+```shell script
+ ./mvnw clean package -Dquarkus.kubernetes.deploy=true
+```
+
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
@@ -68,3 +78,6 @@ The Quarkus application configuration is located in `src/main/resources/applicat
 Easily start your Reactive RESTful Web Services
 
 [Related guide section...](https://quarkus.io/guides/getting-started-reactive#reactive-jax-rs-resources)
+
+
+

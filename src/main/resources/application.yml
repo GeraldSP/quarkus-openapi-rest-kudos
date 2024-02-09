@@ -2,6 +2,8 @@ greeting:
   message: "hello"
 
 quarkus:
+  http:
+    host: 0.0.0.0
   profile: dev
   openshift:
     build-strategy: docker

@@ -1,7 +1,13 @@
 greeting:
   message: "hello"
 
+In application.properties set the following values:
+
+
+
 quarkus:
+  management:
+    enabled: true
   http:
     host: 0.0.0.0
   profile: dev
@@ -12,3 +18,7 @@ quarkus:
     jvm-dockerfile: src/main/docker/Dockerfile.jvm
   kubernetes-client:
     trust-certs: true
+  smallrye-openapi:
+    auto-add-tags: true
+  swagger-ui:
+    always-include: true
